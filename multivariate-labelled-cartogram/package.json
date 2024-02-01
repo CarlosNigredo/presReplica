@@ -1,0 +1,14 @@
+{
+  "name": "@abebrath/multivariate-labelled-cartogram",
+  "main": "040532276ecfde72@1824.js",
+  "version": "1824.0.0",
+  "homepage": "https://observablehq.com/@abebrath/multivariate-labelled-cartogram",
+  "author": {
+    "name": "abebrath",
+    "url": "https://observablehq.com/@abebrath"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}

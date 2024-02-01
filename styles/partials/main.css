@@ -1,0 +1,121 @@
+main {
+	padding: 20px;
+}
+
+section {
+	height: 100%;
+	padding: 1px 0;
+
+	h2 {
+		text-align: center;
+	}
+
+	& > h2:first-child {
+		margin: 0;
+	}
+}
+
+section::after {
+	content: '☸';
+	font-size: 10px;
+	position: absolute;
+	left: 4px;	
+}
+
+#dos::after, #tres::after, #cuatro::after, #seis::after, #siete::after, #nueve::after, #diez::after, #once::after, #doce::after, #trece::after, #catorce::after, #quince::after, #dieciseis::after, #diecisiete::after, #dieciocho::after, #diecinueve::after, #veinte::after, #veintiuno::after, #veintidos::after, #veintitres::after, #veinticuatro::after, #veinticinco::after, #veintiseis::after, #veintisiete::after, #veintiocho::after, #veintinueve::after, #treinta::after  {
+	bottom: -35px;
+}
+
+#tres::after {
+	left: 38px;
+}
+
+#cuatro::after {
+	left: 71px;
+}
+
+#cinco::after {
+	left: 113px;
+	bottom: -49px;
+}
+
+#seis::after {
+	left: 140px;
+}
+
+#siete::after {
+	left: 173px;
+}
+
+#ocho::after {
+	left: 215px;
+	bottom: -51px;
+}
+
+#nueve::after {
+	left: 249px;
+	bottom: -51px;
+}
+
+#diez::after {
+	left: 286px;
+	bottom: -51px;
+}
+
+#once::after {
+	left: 326px;
+	bottom: -51px;
+}
+
+#doce::after {
+	left: 366px;
+	bottom: -53px;
+}
+
+#trece::after {
+	left: 406px;
+	bottom: -51px;
+}
+
+#catorce::after {
+	left: 447px;
+	bottom: -52px;
+}
+
+#quince::after {
+	left: 488px;
+	bottom: -54px;
+}
+
+#dieciseis::after {
+	left: 528px;
+	bottom: -53px;
+}
+
+#diecisiete::after {
+	left: 568px;
+	bottom: -53px;
+}
+
+@media(min-width: 40em) {
+	main {
+		padding: 30px;
+	}
+}
+
+@media(min-width: 60em) {
+	main {
+		padding: 50px 5vw;
+	}
+}
+
+@media(min-width: 80em) {
+	main {
+		padding: 15px 0 40px;
+	}
+
+	section {
+		max-width: 1080px;
+		margin: 0 auto;
+	}
+}
