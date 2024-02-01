@@ -236,7 +236,7 @@
                                 <a class="white-txt" href="#ocho">
                                     <div class="sqr-item inline-block">PRUEBA <br> <span>A</span></div>
                                 </a>
-                                <a class="white-txt" href="#trece">
+                                <a class="white-txt" href="#catorce">
                                     <div class="sqr-item inline-block">PRUEBA <br> <span>B</span></div>
                                 </a>
                                 <p class="objetivo hidden">Objetivo: Calcular cuántos niveles de peso, ancho y oblicuación pueden percibir las personas participantes</p>
@@ -502,6 +502,25 @@
                 </div>
             </section>
             <section id="catorce">
+                <div class="container-dos test-bg test-bg--b">
+                    <div class="col-2 center-txt">
+                        <h1>Tarea perceptual</h1>
+                    </div>
+                    <div class="col-2 center-txt">
+                        <div class="demo demo-dedomena reg">H</div>
+                        <div id="comparacionDed" class="demo demo-dedomena bold">O</div>
+                    </div>
+                    <div class="col-2 center-txt" style="margin-top: -80px;">
+                        <div id="weightLowDed" style="display: inline-block; padding-right: 100px;">70</div>
+                        <div id="weightHighDed" style="display: inline-block; padding-left: 100px;">150</div>
+                    </div>
+                    <div class="col-2 center-txt" style="margin-top: 40px;">
+                        <div id="minusDed" class="btn-step">-</div>
+                        <div id="plusDed" class="btn-step">+</div>
+                    </div>
+                </div>
+            </section>
+            <section id="quince">
                 <div class="container test-bg test-bg--b">
                     <!-- <div class="col-2 center-txt">
                         <h1>Fuente variable con signos alfanuméricos</h1>
@@ -550,7 +569,7 @@
                     </div>
                 </div>
             </section>
-            <section id="quince">
+            <section id="dieciseis">
                 <div class="container-dos test-bg test-bg--b">
                     <h1 style="margin-bottom: 170px; line-height: 1.25;" class="col-2 center-txt">
                         30 participantes <br> <span style="font-size: 21px; font-weight: 400; color: var(--offwhite);"> (Ingeniería Biológica, Diseño integral de UAM-C)</span>
@@ -634,7 +653,7 @@
                     </div>
                 </div> -->
             </section> 
-            <section id="dieciseis">
+            <section id="diecisiete">
                 <div class="container test-bg test-bg--b">
                     <div class="col col-3">
                         <div class="scale-dedomena wght">
@@ -660,9 +679,6 @@
                             <div id="slnt" class="var">Inclinación <br> <span>(grados)</span></div>
                             <div class="min">0</div>
                             <div class="max">20</div>
-                            <div class="point lslnt lslnt-low hidden"></div>
-                            <div class="point lslnt lslnt-mid hidden"></div>
-                            <div class="point lslnt lslnt-hgh hidden"></div>
                             <div class="point rslnt rslnt-low hidden"></div>
                             <div class="point rslnt rslnt-mid hidden"></div>
                             <div class="point rslnt rslnt-hgh hidden"></div>
@@ -674,7 +690,7 @@
                         </caption>
                     </div>
             </section> 
-            <section id="diecisiete">
+            <section id="dieciocho">
                 <div class="container test-bg test-bg--b">
                     <div class="col col-3">
                         <img class="full" src="img/Umbrales de Peso normalizados (Optotipos vs Alfanum).png" alt="">
@@ -682,7 +698,7 @@
                     </div>
                 </div>
             </section> 
-            <section id="dieciocho">
+            <section id="diecinueve">
                 <div class="container test-bg test-bg--b">
                     <div class="col col-3">
                         <img class="full" src="img/ExpB-Peso.png" alt="">
@@ -823,7 +839,7 @@
                 shown.style.display = "none";
             });
 
-
+            // TAREA PERCEPTUAL OPTOTIPO
             var btnMinus = document.getElementById("minus");
             var btnPlus = document.getElementById("plus");
             var comparacion = window.getComputedStyle(hidden);
@@ -852,6 +868,54 @@
                 let newSettings = constantCss + String(newWeight);
                 hidden.style.fontVariationSettings = newSettings;
                 whigh.innerHTML = newWeight;
+            })
+
+
+            // TAREA PERCEPTUAL DEDOMENA
+            var signos = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','0','1','2','4','5','6','7','8','9'];
+            var btnMinusDed = document.getElementById("minusDed");
+            var btnPlusDed = document.getElementById("plusDed");
+            var compDedomena = document.getElementById("comparacionDed");
+            var stdDedomena = document.querySelector(".demo-dedomena.reg");
+            var comparacionDed = window.getComputedStyle(compDedomena);
+            var stepDed = 15;
+            var stdDed = 70;
+            var compDed = 150;
+            var constantCssDed = '"slnt" 0, "wdth" 590, "wght" ';
+            var wlowDed = document.getElementById("weightLowDed");
+            wlowDed.innerHTML = stdDed;   
+            var whighDed = document.getElementById("weightHighDed");   
+            whighDed.innerHTML = compDed;   
+
+            var getRandom = function(){
+                var random = Math.floor(Math.random() * signos.length);
+                return signos[random];
+            }
+
+            btnMinusDed.addEventListener("click", function(e){
+                let currentSettings = comparacionDed.fontVariationSettings;
+                let randomR = getRandom();
+                let randomL = getRandom();
+                let currentWeight = currentSettings.substring(29);
+                let newWeight = Number(currentWeight) - step;
+                let newSettings = constantCssDed + String(newWeight);
+                compDedomena.style.fontVariationSettings = newSettings;
+                compDedomena.innerHTML = randomR;
+                stdDedomena.innerHTML = randomL;
+                whighDed.innerHTML = newWeight;
+            })
+
+            btnPlusDed.addEventListener("click", function(e){
+                let currentSettings = comparacionDed.fontVariationSettings;
+                let randomR= getRandom();
+                let randomL = getRandom();
+                let currentWeight = currentSettings.substring(29);
+                let newWeight = Number(currentWeight) + step;
+                let newSettings = constantCssDed + String(newWeight);
+                compDedomena.style.fontVariationSettings = newSettings;
+                compDedomena.innerHTML = randomR;
+                stdDedomena.innerHTML = randomL;
+                whighDed.innerHTML = newWeight;
             })
 
 
