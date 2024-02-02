@@ -1380,6 +1380,67 @@ p.second {
 	}
 }
 
+/* GRAFICA UMBRALES PESO  */
+
+#graphWeight {
+	position: relative;
+	
+	& .legend {
+		position: absolute;
+		font-weight: 400;
+		font-size: 18px;
+		text-align: left;
+	}
+
+	& .text {
+		width: 300px;
+		padding-left: 45px;
+	}
+
+	& .legend.con, .legend.promedio, .legend.sin {
+		right: -40px;
+	}
+	
+	& .legend.con {
+		top: 216px;
+		color: white;
+		
+		& .line {
+			background-color: white;
+			height: 2px;
+			width: 30px;
+			top: 228px;
+			right: 224px;
+		}
+	}
+	
+	& .legend.sin {
+		top: 132px;
+		color: #777;
+		
+		& .line {
+			background-color: #777;
+			height: 2px;
+			width: 30px;
+			top: 143px;
+			right: 224px;
+		}
+	}
+	
+	& .legend.promedio {
+		top: 170px;
+		color: var(--orange);
+		
+		& .line {
+			background-color: var(--orange);
+			height: 8px;
+			width: 30px;
+			top: 178px;
+			right: 224px;
+		}
+	}
+}
+
 .hidden {
 	display: none !important;
 }

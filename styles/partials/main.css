@@ -96,6 +96,10 @@ section::after {
 	left: 568px;
 	bottom: -53px;
 }
+#dieciocho::after {
+	left: 608px;
+	bottom: -53px;
+}
 
 @media(min-width: 40em) {
 	main {
