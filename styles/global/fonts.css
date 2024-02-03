@@ -72,12 +72,12 @@
 
 @font-face {
 	font-family: 'Optotipo';
-	src: url('/fonts/OptotypeVF.ttf') format('truetype');
+	src: url('../../fonts/OptotypeVF.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Dedomena';
-	src: url('/fonts/DedomenaVARVF.ttf') format('truetype');
+	src: url('../../fonts/DedomenaVARVF.ttf') format('truetype');
 }
 
 @font-face {
