@@ -13,7 +13,7 @@ body, *::before, *::after {
 	--offwhite: #C8C8C8;
 	--black: #051A32;
 	--gray: #777777;
-	--neutral: var(--black);
+	--neutral: #051A32;
 	--font_main: Fira Sans, sans-serif;
 	--font_main_cond: Fira Sans Condensed, sans-serif;
 	--font_archivo: Archivo, sans-serif;
