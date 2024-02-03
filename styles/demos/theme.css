@@ -8,8 +8,8 @@ body {
 		--pink: #A0276C;
 		--orange: #BB5C04;
 		--yellow: #8C7506;
-		--background: #C8C8C8;
-		--neutral: #051A32;
+		--background: #051A32;
+		--neutral: #C8C8C8;
 	} 
 	
 	@media(prefers-color-scheme: dark) {
