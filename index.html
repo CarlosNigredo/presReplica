@@ -229,21 +229,21 @@
             <section id="siete">
                 <div class="container">
                     <div class="col-3">
-                        <h2>Diseño la investigación</h2>
+                        <h2>Diseño de la investigación</h2>
                         <div class="container-dos col-2">
                             <div class="col">
-                                <p class="title-smllcps highlight white-txt">Perceptibilidad</p>
-                                <a class="white-txt" href="#ocho">
+                                <p class="title-smllcps highlight">Perceptibilidad</p>
+                                <a id="prueba-a" href="#ocho">
                                     <div class="sqr-item inline-block">PRUEBA <br> <span>A</span></div>
                                 </a>
-                                <a class="white-txt" href="#catorce">
+                                <a id="prueba-b" class="" href="#catorce">
                                     <div class="sqr-item inline-block">PRUEBA <br> <span>B</span></div>
                                 </a>
                                 <p class="objetivo hidden">Objetivo: Calcular cuántos niveles de peso, ancho y oblicuación pueden percibir las personas participantes</p>
                             </div>
                             <div class="col">
-                                <p class="title-smllcps highlight white-txt">Usabilidad</p>
-                                <a class="white-txt" href="#">
+                                <p class="title-smllcps highlight">Usabilidad</p>
+                                <a class="" href="#">
                                     <div class="sqr-item inline-block">PRUEBA <br> <span>C</span></div>
                                 </a>
                                 <p class="objetivo hidden">Objetivo: Calcular número de aciertos y errores, así como tiempo de resolución de tareas</p>
@@ -376,7 +376,7 @@
             <section id="once">
                 <div class="container test-bg test-bg--a">
                     <h1 style="margin-bottom: 150px; line-height: 1.25;" class="col-3 center-txt">
-                        22 participantes <br> <span style="font-size: 21px; font-weight: 400; color: var(--offwhite);"> (Biología, Administración, Economía de UAM-X)</span>
+                        22 participantes <br> <span style="font-size: 21px; font-weight: 400; color: var(--gray);"> (Biología, Administración, Economía de UAM-X)</span>
                     </h1>
                     <div class="center-txt">
                         <div class="persona"></div>
@@ -457,7 +457,7 @@
                     <div class="col col-3">
                         <div class="scale wght">
                             <div class="track"></div>
-                            <div id="wght-res" class="var">Peso</div>
+                            <div id="wght-res" class="var">Peso <br> <span>(UPM)</span></div>
                             <div class="min">40</div>
                             <div class="max">180</div>
                             <div class="point weight weight-low results-a"></div>
@@ -469,7 +469,7 @@
                         </div>
                         <div class="scale wdth">
                             <div class="track"></div>
-                            <div id="wdth-res" class="var">Ancho</div>
+                            <div id="wdth-res" class="var">Ancho <br> <span>(UPM)</span></div>
                             <div class="min">560</div>
                             <div class="max">1000</div>
                             <div class="point wdth wdth-low results-a hidden"></div>
@@ -481,7 +481,7 @@
                         </div>
                         <div class="scale slnt">
                             <div class="track"></div>
-                            <div id="slnt-res" class="var">Inclinación</div>
+                            <div id="slnt-res" class="var">Inclinación <br> <span>(grados)</span></div>
                             <div class="min">-20</div>
                             <div class="max">20</div>
                             <div class="point lslnt lslnt-low results-a hidden"></div>
@@ -497,7 +497,7 @@
                             <div class="point rslnt rslnt-hgh results-a hidden"></div>
                             <div class="point rslnt rslnt-hgh results-a dif hidden"></div>
                         </div>
-                        <a href="#siete"> Diseño de investigación</a>
+                        <a id="des-uno" class="back-to-design" href="#siete"> Diseño de <br> investigación</a>
                     </div>
                 </div>
             </section>
@@ -572,7 +572,7 @@
             <section id="dieciseis">
                 <div class="container-dos test-bg test-bg--b">
                     <h1 style="margin-bottom: 170px; line-height: 1.25;" class="col-2 center-txt">
-                        30 participantes <br> <span style="font-size: 21px; font-weight: 400; color: var(--offwhite);"> (Ingeniería Biológica, Diseño integral de UAM-C)</span>
+                        30 participantes <br> <span style="font-size: 21px; font-weight: 400; color: var(--gray);"> (Ingeniería Biológica, Diseño integral de UAM-C)</span>
                     </h1>
                     <div id="non-dis" class="center-txt">
                         <div class="persona wght"></div>
@@ -987,6 +987,37 @@
                 var emThree = document.getElementById('em-three');
                 emThree.classList.remove('hidden');
             });
+
+            var pageAnchors = document.querySelectorAll("nav a");
+
+            pageAnchors.forEach(anchor => {
+                anchor.addEventListener('click', function(){
+                    pageAnchors.forEach((e) => e.style.cssText = "color: var(--gray); font-weight: 200;");
+                    
+                    this.style.cssText = "color: var(--navy); font-weight: 600;";
+                })  
+            });
+
+            var prueba_a = document.getElementById("prueba-a");
+            
+            var prueba_b = document.getElementById("prueba-b");
+
+            var back_des_uno = document.getElementById("des-uno");
+
+            var updateNav = function(){
+                ref = this.hash;
+                pageAnchors.forEach((e) => e.style.cssText = "color: var(--gray); font-weight: 200;");
+
+                let x = Object.values(pageAnchors).filter(p => p.hash === ref)[0];
+                    
+                x.style.cssText = "color: var(--navy); font-weight: 600;";
+            }
+
+            prueba_a.addEventListener('click', updateNav);
+            
+            prueba_b.addEventListener('click', updateNav);
+            
+            back_des_uno.addEventListener('click', updateNav);
 
         </script>
     </body>

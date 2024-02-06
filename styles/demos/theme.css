@@ -2,14 +2,14 @@ body {
 	@media(prefers-color-scheme: light) {
 		--purple_bright: #84398F;
 		--purple: #5B45AF;
-		--blue: #1976D4;
+		--blue: #3E37B0;
 		--green: #437E45;
 		--red: #AD1728;
 		--pink: #A0276C;
-		--orange: #BB5C04;
+		--orange: #C6371E;
 		--yellow: #8C7506;
-		--background: #051A32;
-		--neutral: #C8C8C8;
+		--background: #e1e1e1;
+		--neutral: #051e4e;
 	} 
 	
 	@media(prefers-color-scheme: dark) {

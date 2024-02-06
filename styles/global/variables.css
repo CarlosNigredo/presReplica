@@ -1,17 +1,18 @@
 body, *::before, *::after {
-	--background: #051A32;
+	--background: #C8C8C8;
 	--purple_bright: #9440a0;
 	--purple: #7561c1;
-	--navy: #364c93;
+	--navy: #3E37B0;
 	--blue: #318ce7;
 	--green: #64ad66;
 	--red: #e53f51;
 	--pink: #cb5699;
-	--orange: #DC9A6A;
+	--orange: #C6371E;
 	--yellow: #ffce03;
 	--white: #ffffff;
-	--offwhite: #C8C8C8;
+	--offwhite: #e1e1e1;
 	--black: #051A32;
+	--lightgray: #c8c8c8;
 	--gray: #777777;
 	--neutral: #051A32;
 	--font_main: Fira Sans, sans-serif;

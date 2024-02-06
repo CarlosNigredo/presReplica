@@ -15,7 +15,7 @@ section {
 	}
 }
 
-section::after {
+/* section::after {
 	content: '☸';
 	font-size: 10px;
 	position: absolute;
@@ -99,7 +99,7 @@ section::after {
 #dieciocho::after {
 	left: 608px;
 	bottom: -53px;
-}
+} */
 
 @media(min-width: 40em) {
 	main {

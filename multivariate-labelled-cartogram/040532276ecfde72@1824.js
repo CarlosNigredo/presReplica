@@ -373,7 +373,7 @@ html`
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 <style>
   * {
-    color: white;
+    color: var(--black);
   }
   .svgBackground {fill: #fffbeb;}
 

@@ -7,7 +7,7 @@ footer {
 
 	&::before {
 		content: '';
-		background: var(--black);
+		background: var(--offwhite);
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -15,27 +15,26 @@ footer {
 		width: 100vw;
 		transform: translateX(-50%);
 		z-index: -1;
-		box-shadow: 1px 1px 5px var(--neutral);
+		box-shadow: 1px 1px 5px var(--lightgray);
 	}
 
 	& nav {
 		width: 100%;
-		font-weight: 200;
-
+		
 		& ul {
 			display: flex;
 			justify-content: space-evenly;
 			flex-wrap: wrap;
 			margin: 0px 10px 10px;
 		}
-
+		
 		& li {
 			margin: 0px;
 			
 			& a {
+				font-weight: 200;
 				padding: 10px 12px;
 				position: relative;
-				border: solid 1px var(--black);
 			}
 
 			/* & a::before {
@@ -48,10 +47,10 @@ footer {
 				border: solid 1px yellow;
 			} */
 
-			& a:hover {
-
-				color: white;
-			}
+			/* & a:hover {
+				font-weight: 600;
+				color: var(--orange);
+			} */
 		}
 	}
 
