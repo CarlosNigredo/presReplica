@@ -6,14 +6,16 @@ body, *::before, *::after {
 	--blue: #318ce7;
 	--green: #64ad66;
 	--red: #e53f51;
-	--pink: #cb5699;
+	--pink: #ff5488;
 	--orange: #C6371E;
 	--yellow: #ffce03;
 	--white: #ffffff;
 	--offwhite: #e1e1e1;
 	--black: #051A32;
 	--lightgray: #c8c8c8;
+	--midgray: #9a9a9a;
 	--gray: #777777;
+	/* --gray_lvl: #777777; */
 	--neutral: #051A32;
 	--font_main: Fira Sans, sans-serif;
 	--font_main_cond: Fira Sans Condensed, sans-serif;

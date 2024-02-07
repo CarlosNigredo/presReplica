@@ -7,7 +7,7 @@ footer {
 
 	&::before {
 		content: '';
-		background: var(--offwhite);
+		background-color: var(--background_cl, #1D1959);
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -15,7 +15,7 @@ footer {
 		width: 100vw;
 		transform: translateX(-50%);
 		z-index: -1;
-		box-shadow: 1px 1px 5px var(--lightgray);
+		box-shadow: 1px 1px 5px var(--background_sh, #1D1959);
 	}
 
 	& nav {

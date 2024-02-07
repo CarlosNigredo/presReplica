@@ -5,11 +5,11 @@ header {
 	text-align: center;
 	font-family: var(--font_main_cond);
 	font-weight: 200;
-	color: var(--gray);
+	color: var(--color_h, #1D1959);
 
 	&::before {
 		content: '';
-		background: var(--offwhite);
+		background-color: var(--background_cl, #1D1959);
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -17,7 +17,7 @@ header {
 		width: 100vw;
 		transform: translateX(-50%);
 		z-index: -1;
-		box-shadow: 0px 1px 5px var(--lightgray);
+		box-shadow: 0px 1px 5px var(--background_sh, #1D1959);
 	}
 
 	& nav {

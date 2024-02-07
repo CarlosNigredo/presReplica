@@ -81,6 +81,91 @@
 }
 
 @font-face {
+    font-family: "dedomena-base";
+    src: url("../../fonts/DedomenaVF.woff2") format('woff2');
+  }
+
+@font-face {
 	font-family: 'awesome';
 	src: url('/fonts/fontawesome-webfont.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'john1';
+	src: url('../../fonts/Fell_0_42_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john2';
+	src: url('../../fonts/Fell_0_47_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john3';
+	src: url('../../fonts/Fell_0_51_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john4';
+	src: url('../../fonts/Fell_0_56_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john5';
+	src: url('../../fonts/Fell_0_61_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john6';
+	src: url('../../fonts/Fell_0_66_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john7';
+	src: url('../../fonts/Fell_0_71_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john8';
+	src: url('../../fonts/Fell_0_77_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john9';
+	src: url('../../fonts/Fell_0_82_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john10';
+	src: url('../../fonts/Fell_0_88_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john11';
+	src: url('../../fonts/Fell_0_94_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john12';
+	src: url('../../fonts/Fell_0_100_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john13';
+	src: url('../../fonts/Fell_0_106_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john14';
+	src: url('../../fonts/Fell_0_113_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john15';
+	src: url('../../fonts/Fell_0_120_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john16';
+	src: url('../../fonts/Fell_0_126_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john17';
+	src: url('../../fonts/Fell_0_134_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john18';
+	src: url('../../fonts/Fell_0_141_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'john19';
+	src: url('../../fonts/Fell_0_149_1_500_1.1_1_1_65.woff') format('truetype');
+}
+@font-face {
+	font-family: 'datalegreya';
+	src: url('../../fonts/Datalegreya-Gradient.otf') format('truetype');
 }
